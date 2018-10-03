@@ -10,7 +10,6 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    Button btnCalculate;
     EditText etHeight, etWeight;
     TextView tvResult;
 
@@ -19,16 +18,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+    }
+
+    @Override
+    public void onClick(View v) {
+
+    }
+}
+/*
         btnCalculate = (Button) findViewById(R.id.btCalculate);
         btnCalculate.setOnClickListener(this);
         etHeight = (EditText) findViewById(R.id.etHeight);
         etWeight = (EditText) findViewById(R.id.etWeight);
         tvResult = (TextView) findViewById(R.id.tvResult);
-    }
 
-    @Override
-    public void onClick(View v) {
-        if(v == btnCalculate){
+if(v == btnCalculate){
             String height = etHeight.getText().toString();
             String weight = etWeight.getText().toString();
 
@@ -42,5 +47,4 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 tvResult.setText(bmi+"");
             }
         }
-    }
-}
+ */
