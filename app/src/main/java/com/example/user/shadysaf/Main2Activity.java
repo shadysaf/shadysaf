@@ -5,14 +5,16 @@ import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.Toast;
 
-public class AboutBarcelonaActivity extends AppCompatActivity implements DialogInterface.OnClickListener {
+public class Main2Activity extends AppCompatActivity implements DialogInterface.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_about_barcelona);
+        setContentView(R.layout.activity_main2);
     }
+
 
     @Override
     public void onClick(DialogInterface dialog, int which) {

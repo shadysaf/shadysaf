@@ -14,15 +14,15 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/tvBarcelona"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="72dp"
             android:gravity="center"
             android:text="Barcelona"
             android:textAlignment="center"
             android:textAllCaps="true"
             android:textColor="@android:color/black"
-            android:textSize="30sp"
+            android:textSize="36sp"
             android:textStyle="bold|italic" />
 
         <ImageView
@@ -39,9 +39,13 @@
         android:orientation="vertical">
 
         <Button
+            android:id="@+id/btStart"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:text="START"
+            android:textAllCaps="true"
+            android:textSize="24sp"
+            android:textStyle="bold|italic" />
     </LinearLayout>
 
 </LinearLayout>
