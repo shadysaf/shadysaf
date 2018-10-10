@@ -17,7 +17,7 @@
         <TextView
             android:id="@+id/textView3"
             android:layout_width="match_parent"
-            android:layout_height="118dp"
+            android:layout_height="133dp"
             android:text="STANDINGS"
             android:textAlignment="center"
             android:textAllCaps="true"
@@ -30,7 +30,7 @@
         <TextView
             android:id="@+id/textView4"
             android:layout_width="match_parent"
-            android:layout_height="136dp"
+            android:layout_height="144dp"
             android:text=" GAMES LIST"
             android:textAlignment="center"
             android:textAllCaps="true"
@@ -41,7 +41,7 @@
         <TextView
             android:id="@+id/textView5"
             android:layout_width="match_parent"
-            android:layout_height="140dp"
+            android:layout_height="152dp"
             android:text="PLAYERS LIST"
             android:textAlignment="center"
             android:textAllCaps="true"

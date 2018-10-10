@@ -42,11 +42,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
     @Override
     public void onClick(DialogInterface dialog, int which) {
-        if (which == dialog.BUTTON_POSITIVE)
-        {
-            Toast.makeText(this,"Yes",Toast.LENGTH_LONG).show();
 
-        }
         if(which==dialog.BUTTON_NEGATIVE);
         {
             Toast.makeText(this,"No",Toast.LENGTH_LONG).show();

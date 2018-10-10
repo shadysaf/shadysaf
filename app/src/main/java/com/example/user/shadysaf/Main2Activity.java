@@ -5,14 +5,19 @@ import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
-public class Main2Activity extends AppCompatActivity implements DialogInterface.OnClickListener {
+public class Main2Activity extends AppCompatActivity implements DialogInterface.OnClickListener,View.OnClickListener {
+    TextView textView3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
+        textView3=(TextView) findViewById(R.id.textView3);
+        textView3.setOnClickListener(this);
     }
 
 
@@ -26,6 +31,7 @@ public class Main2Activity extends AppCompatActivity implements DialogInterface.
         }
 
     }
+
     @Override
     public void onBackPressed() {
         //
@@ -42,5 +48,15 @@ public class Main2Activity extends AppCompatActivity implements DialogInterface.
         AlertDialog dialog = builder.create();
         //
         dialog.show();
+    }
+
+    @Override
+    public void onClick(View v) {
+        if(v==textView3){
+            Intent intent1 = new Intent(getApplication(),ListActivity.class);
+            startActivity(intent1);
+        }
+
+
     }
 }
