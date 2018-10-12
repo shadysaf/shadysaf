@@ -27,13 +27,13 @@ public class ListActivity extends AppCompatActivity implements AdapterView.OnIte
         arrayList.add("     TEAM                                       Pl      W     D     L      Pts");
         arrayList.add("1  SEVILLA                                     8       5     1     2       16");
         arrayList.add("2  FC BARCELONA                       8       4     3     1       15");
-        arrayList.add("3  ATLETICO MADRID                  8       4     3     1       15");
+        arrayList.add("3  ATLETICO MADRID                 8       4     3     1       15");
         arrayList.add("4  REAL MADRID                          8       4     2     2       14");
-        arrayList.add("5  ESPANYOL                                 8       4     2     2       14");
+        arrayList.add("5  ESPANYOL                                8       4     2     2       14");
         arrayList.add("6  ALAVES                                      8       4     2     2       14");
         arrayList.add("7  VALLADOLID                             8       3     3     2       12");
-        arrayList.add("8  REAL BETIS                                8       3     3     2       12");
-        arrayList.add("9  REAL SOCIEDAD                      8       3     2     3       11");
+        arrayList.add("8  REAL BETIS                               8       3     3     2       12");
+        arrayList.add("9  REAL SOCIEDAD                       8       3     2     3       11");
         arrayList.add("10 CELTA VIGO                              8       2     4     2       10");
         arrayList.add("11 LEVANTE                                   8       3     1     4       10");
         arrayList.add("12 EIBAR                                         8       3     1     4       10");

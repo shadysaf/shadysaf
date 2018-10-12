@@ -19,7 +19,8 @@
         <activity android:name=".AlertDialogActivity" />
         <activity android:name=".ListActivity" />
         <activity android:name=".AboutBarcelonaActivity" />
-        <activity android:name=".Main2Activity"></activity>
+        <activity android:name=".Main2Activity" />
+        <activity android:name=".PLAYERLISTActivity"></activity>
     </application>
 
 </manifest>
