@@ -16,6 +16,7 @@ public class Main2Activity extends AppCompatActivity implements DialogInterface.
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
+
         textView3=(TextView) findViewById(R.id.textView3);
         textView3.setOnClickListener(this);
     }
