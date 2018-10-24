@@ -20,10 +20,29 @@ public class PLAYERLISTActivity extends AppCompatActivity implements AdapterView
 
         playersList = findViewById(R.id.playersList);
         items = new ArrayList<>();
-        items.add(new Item(R.drawable.stegen,"shady"));
-        items.add(new Item(R.drawable.stegen,"shady"));
-        items.add(new Item(R.drawable.stegen,"shady"));
-        items.add(new Item(R.drawable.stegen,"shady"));
+        items.add(new Item(R.drawable.stegen,"1.STEGEN"));
+        items.add(new Item(R.drawable.semedo,"2.SEMEDO"));
+        items.add(new Item(R.drawable.pique,"3.PIQUE"));
+        items.add(new Item(R.drawable.rakititc,"4.RAKITITC"));
+        items.add(new Item(R.drawable.posquets,"5.BOSQUETS"));
+        items.add(new Item(R.drawable.denis,"6.DENIS"));
+        items.add(new Item(R.drawable.coutinho,"7.COUTINHO"));
+        items.add(new Item(R.drawable.arthur,"8.ARTHUR"));
+        items.add(new Item(R.drawable.suarez,"9.SUAREZ"));
+        items.add(new Item(R.drawable.messi,"10.MESSI"));
+        items.add(new Item(R.drawable.dembele,"11.DEMBELE"));
+        items.add(new Item(R.drawable.rafinha,"12.RAFINHA"));
+        items.add(new Item(R.drawable.cillessen,"13.CILLESSEN"));
+        items.add(new Item(R.drawable.malcom,"14.MALCOM"));
+        items.add(new Item(R.drawable.lenglet,"15.LENGLET"));
+        items.add(new Item(R.drawable.samper,"16.SAMPER"));
+        items.add(new Item(R.drawable.alba,"18.ALBA"));
+        items.add(new Item(R.drawable.munir,"19.MUNIR"));
+        items.add(new Item(R.drawable.roberto,"20.ROBERTO"));
+        items.add(new Item(R.drawable.vidal,"22.VIDAL"));
+        items.add(new Item(R.drawable.umtiti,"23.UMTITI"));
+        items.add(new Item(R.drawable.vermalen,"24.VERMALEN"));
+        items.add(new Item(R.drawable.valverde,"VALVERDE"));
 
         arrayAdapter = new CustomAdapter(this,R.layout.custom_row,items);
         playersList.setAdapter(arrayAdapter);
