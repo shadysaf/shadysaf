@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-
+    android:background="@drawable/q"
     tools:context=".CameraGalleryActivity">
 
 
@@ -33,7 +33,7 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
-        app:srcCompat="@drawable/alba" />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/s" />
 </LinearLayout>

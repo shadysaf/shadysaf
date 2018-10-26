@@ -10,7 +10,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class Main2Activity extends AppCompatActivity implements DialogInterface.OnClickListener,View.OnClickListener {
-    TextView textView3;
+    TextView textView3,textView5,topscorers;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +19,11 @@ public class Main2Activity extends AppCompatActivity implements DialogInterface.
 
         textView3=(TextView) findViewById(R.id.textView3);
         textView3.setOnClickListener(this);
+        textView5=(TextView) findViewById(R.id.textView5);
+        textView5.setOnClickListener(this);
+        topscorers=(TextView) findViewById(R.id.topscorers);
+        topscorers.setOnClickListener(this);
+
     }
 
 
@@ -56,6 +61,14 @@ public class Main2Activity extends AppCompatActivity implements DialogInterface.
         if(v==textView3){
             Intent intent1 = new Intent(getApplication(),ListActivity.class);
             startActivity(intent1);
+        }
+        if(v== textView5){
+            Intent intent5 = new Intent(getApplication(),PLAYERLISTActivity.class);
+            startActivity(intent5);
+        }
+        if(v== topscorers){
+            Intent intent6 = new Intent(getApplication(),TopScorers.class);
+            startActivity(intent6);
         }
 
 

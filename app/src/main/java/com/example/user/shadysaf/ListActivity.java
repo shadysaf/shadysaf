@@ -24,7 +24,7 @@ public class ListActivity extends AppCompatActivity implements AdapterView.OnIte
         setContentView(R.layout.activity_list);
 
         standings = (ListView) findViewById(R.id.standings);
-        arrayList.add("     TEAM                                       Pl      W     D     L      Pts");
+        arrayList.add("      TEAM                                       Pl      W     D     L      Pts");
         arrayList.add("1  SEVILLA                                     8       5     1     2       16");
         arrayList.add("2  FC BARCELONA                       8       4     3     1       15");
         arrayList.add("3  ATLETICO MADRID                 8       4     3     1       15");
