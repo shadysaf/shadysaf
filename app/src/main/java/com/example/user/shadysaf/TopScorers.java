@@ -23,16 +23,16 @@ public class TopScorers extends AppCompatActivity implements DialogInterface.OnC
 
         TopScorers = findViewById(R.id.TopScorers);
         items = new ArrayList<>();
-        items.add(new Item(R.drawable.messi,"649 games   564 goals"));
-        items.add(new Item(R.drawable.suarez,"211 games   156 goals"));
-        items.add(new Item(R.drawable.rivaldo,"236 games   133 goals"));
-        items.add(new Item(R.drawable.etoo,"199 games   130 goals"));
-        items.add(new Item(R.drawable.kluivert,"259 games   123 goals"));
-        items.add(new Item(R.drawable.stoichkov,"247 games   114 goals"));
-        items.add(new Item(R.drawable.enrique,"301 games   110 goals"));
-        items.add(new Item(R.drawable.neymar,"186 games   105 goals"));
-        items.add(new Item(R.drawable.pedro,"321 games   99 goals"));
-        items.add(new Item(R.drawable.ronaldinho,"207 games   94 goals"));
+        items.add(new Item(R.drawable.messi3,"649 games       564 goals"));
+        items.add(new Item(R.drawable.suarez4,"211 games       156 goals"));
+        items.add(new Item(R.drawable.rivaldo3,"236 games       133 goals"));
+        items.add(new Item(R.drawable.etoo3,"199 games       130 goals"));
+        items.add(new Item(R.drawable.kluivert2,"259 games       123 goals"));
+        items.add(new Item(R.drawable.stoichkov2,"247 games       114 goals"));
+        items.add(new Item(R.drawable.enrique2,"301 games       110 goals"));
+        items.add(new Item(R.drawable.neymar2,"186 games       105 goals"));
+        items.add(new Item(R.drawable.pedro2,"321 games         99 goals"));
+        items.add(new Item(R.drawable.ronaldinho2,"207 games         94 goals"));
 
         arrayAdapter = new CustomAdapter(this,R.layout.custom_row,items);
         TopScorers.setAdapter(arrayAdapter);
