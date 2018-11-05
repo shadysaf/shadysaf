@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".FireActivity">MainActivity
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,6 +23,7 @@
         <activity android:name=".PLAYERLISTActivity" />
         <activity android:name=".Main2Activity" />
         <activity android:name=".TopScorers" />
+        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>
