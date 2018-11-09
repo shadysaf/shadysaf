@@ -6,21 +6,16 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/q"
-    tools:context=".TopScorers">
+    tools:context=".CalendarActivity">
 
-    <TextView
-        android:id="@+id/textView"
+    <CalendarView
+        android:id="@+id/calendarView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TOP 10 SCORERS"
-        android:textAlignment="center"
-        android:textAllCaps="true"
-        android:textColor="@android:color/white"
-        android:textSize="30sp"
-        android:textStyle="bold|italic" />
+        android:background="@android:color/white"
+        android:selectedWeekBackgroundColor="@android:color/white"
+        android:unfocusedMonthDateColor="@android:color/white"
+        android:weekNumberColor="@android:color/white"
+        android:weekSeparatorLineColor="@android:color/white" />
 
-    <ListView
-        android:id="@+id/TopScorers"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
 </LinearLayout>
