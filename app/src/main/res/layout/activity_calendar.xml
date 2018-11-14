@@ -8,14 +8,8 @@
     android:background="@drawable/q"
     tools:context=".CalendarActivity">
 
-    <CalendarView
-        android:id="@+id/calendarView"
+    <ListView
+        android:id="@+id/GamesList"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@android:color/white"
-        android:selectedWeekBackgroundColor="@android:color/white"
-        android:unfocusedMonthDateColor="@android:color/white"
-        android:weekNumberColor="@android:color/white"
-        android:weekSeparatorLineColor="@android:color/white" />
-
+        android:layout_height="match_parent" />
 </LinearLayout>

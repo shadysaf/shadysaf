@@ -10,13 +10,13 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import java.util.List;
+import java.util.ArrayList;
 
 public class CustomAdapter extends ArrayAdapter<Item> {
     private int resourcelLayout;
     private Context mContext;
 
-    public CustomAdapter(@NonNull Context context, int resource, @NonNull List<Item> objects) {
+    public CustomAdapter(@NonNull Context context, int resource, @NonNull ArrayList<Item> objects) {
         super(context, resource, objects);
         this.resourcelLayout = resource;
         this.mContext = context;
