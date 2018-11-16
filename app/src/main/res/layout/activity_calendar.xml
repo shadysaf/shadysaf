@@ -8,6 +8,17 @@
     android:background="@drawable/q"
     tools:context=".CalendarActivity">
 
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GamesList"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold|italic" />
+
     <ListView
         android:id="@+id/GamesList"
         android:layout_width="match_parent"

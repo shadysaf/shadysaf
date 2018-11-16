@@ -25,9 +25,22 @@ public class CalendarActivity extends AppCompatActivity implements View.OnClickL
 
         GamesList = findViewById(R.id.GamesList);
         items1 = new ArrayList<>();
-        items1.add(new Item2("shadi","siba","layan","absr"));
+        items1.add(new Item2("6 Tue-Nov","Milan","1-1","Barcelona"));
+        items1.add(new Item2("11 Sun-Nov","Barcelona","3-4","Betis"));
+        items1.add(new Item2("24 Sat-Nov","Atletico","21:45","Barcelona"));
+        items1.add(new Item2("28 Wed-Nov","PSV","10:00","Barcelona"));
+        items1.add(new Item2("2 Sun-Dec","Barcelona","19:30","Villarreal"));
+        items1.add(new Item2("5 wed-Dec","Barcelona","22:30","Leonesa"));
+        items1.add(new Item2("8 Sat-Dec","Espanyol","21:45","Barcelona"));
+        items1.add(new Item2("11 Tue-Dec","Barcelona","22:00","Tottenham"));
+        items1.add(new Item2("16 Sun-Dec","Levante","21:00","Barcelona"));
+        items1.add(new Item2("22 Sat-Dec","Barcelona","21:00","Celta Vigo"));
+        items1.add(new Item2("6 Sat-Dec","Getafe","21:00","Barcelona"));
+        items1.add(new Item2("13 Sun-Lan","Barcelona","21:00","Eibar"));
 
-        arrayAdapter = new CustomAdapter2(this,R.layout.custom_row2, items1);
+
+
+        arrayAdapter = new CustomAdapter2(this, R.layout.custom_row2, items1);
         GamesList.setAdapter(arrayAdapter);
 
     }
