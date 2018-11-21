@@ -5,6 +5,9 @@ import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -76,7 +79,20 @@ public class Main2Activity extends AppCompatActivity implements DialogInterface.
             Intent intent1 = new Intent(getApplication(),CalendarActivity.class);
             startActivity(intent1);
         }
+    }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.my_menu, menu);
+        return true;
+    }
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.profile_picture:
 
-
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 }
