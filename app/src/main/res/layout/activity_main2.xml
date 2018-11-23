@@ -21,7 +21,7 @@
             android:text="STANDINGS"
             android:textAlignment="center"
             android:textAllCaps="true"
-            android:textColor="@android:color/black"
+            android:textColor="@android:color/white"
             android:textSize="30sp"
             android:textStyle="bold|italic"
             tools:layout_editor_absoluteX="111dp"
@@ -34,7 +34,7 @@
             android:text=" GAMES LIST"
             android:textAlignment="center"
             android:textAllCaps="true"
-            android:textColor="@android:color/black"
+            android:textColor="@android:color/white"
             android:textSize="30sp"
             android:textStyle="bold|italic" />
 
@@ -45,7 +45,7 @@
             android:text="PLAYERS LIST"
             android:textAlignment="center"
             android:textAllCaps="true"
-            android:textColor="@android:color/black"
+            android:textColor="@android:color/white"
             android:textSize="30sp"
             android:textStyle="bold|italic" />
 
@@ -56,7 +56,7 @@
             android:text="TOP SCORERS"
             android:textAlignment="center"
             android:textAllCaps="true"
-            android:textColor="@android:color/black"
+            android:textColor="@android:color/white"
             android:textSize="30sp"
             android:textStyle="bold|italic" />
 

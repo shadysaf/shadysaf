@@ -24,6 +24,7 @@
         <activity android:name=".FireActivity" />
         <activity android:name=".CalendarActivity" />
         <activity android:name=".TopScorers" />
+        <activity android:name=".SharedActivity"></activity>
     </application>
 
 </manifest>
