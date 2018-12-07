@@ -80,19 +80,5 @@ public class Main2Activity extends AppCompatActivity implements DialogInterface.
             startActivity(intent1);
         }
     }
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.my_menu, menu);
-        return true;
-    }
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.profile_picture:
-
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
-        }
-    }
+    
 }
