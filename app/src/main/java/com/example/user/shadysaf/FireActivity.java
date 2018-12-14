@@ -1,5 +1,6 @@
 package com.example.user.shadysaf;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -38,10 +39,13 @@ public class FireActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fire);
         mAuth = FirebaseAuth.getInstance();
+
         etEmail = (EditText) findViewById(R.id.etEmail);
         etPass = (EditText) findViewById(R.id.etPass);
         btSave = (Button) findViewById(R.id.btSave);
         button10 = (Button) findViewById(R.id.button10);
+        button10.setOnClickListener(this);
+        btSave.setOnClickListener(this);
 
 
     }
@@ -61,7 +65,8 @@ public class FireActivity extends AppCompatActivity implements View.OnClickListe
                             // Sign in success, update UI with the signed-in user's information
                             Log.d(TAG, "createUserWithEmail:success");
                             FirebaseUser user = mAuth.getCurrentUser();
-                            Toast.makeText(FireActivity.this, "Sign Up Successful", Toast.LENGTH_SHORT).show();
+                            Intent intent= new Intent(getApplication(),MainActivity.class);
+                            startActivity(intent);
                             //updateUI(user);
                         } else {
                             // If sign in fails, display a message to the user.
@@ -75,10 +80,42 @@ public class FireActivity extends AppCompatActivity implements View.OnClickListe
                     }
                 });
     }
+    public void signIn(String email, String password){
+        mAuth.signInWithEmailAndPassword(email, password)
+                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        if (task.isSuccessful()) {
+                            // Sign in success, update UI with the signed-in user's information
+                            Log.d(TAG, "signInWithEmail:success");
+                            FirebaseUser user = mAuth.getCurrentUser();
+                            Intent intent= new Intent(getApplication(),MainActivity.class);
+                            startActivity(intent);
+                            //updateUI(user);
+                        } else {
+                            // If sign in fails, display a message to the user.
+                            Log.w(TAG, "signInWithEmail:failure", task.getException());
+                            Toast.makeText(FireActivity.this, "Authentication failed.",
+                                    Toast.LENGTH_SHORT).show();
+                            //updateUI(null);
+                        }
+
+                        // ...
+                    }
+                });
+    }
 
 
     @Override
     public void onClick(View v) {
+       if(etEmail.getText().toString().equals("") || etPass.getText().toString().equals(""))
+           Toast.makeText(this,"fill all the fields",Toast.LENGTH_SHORT).show();
+       else {
+           if (v == button10) {
+               createAccount(etEmail.getText().toString(), etPass.getText().toString());
+           } else
+               signIn(etEmail.getText().toString(), etPass.getText().toString());
 
+       }
     }
 }
