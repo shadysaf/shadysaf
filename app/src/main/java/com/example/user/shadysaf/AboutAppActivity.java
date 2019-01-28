@@ -6,7 +6,7 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class AboutApplicationActivity extends AppCompatActivity implements DialogInterface.OnClickListener {
+public class AboutAppActivity extends AppCompatActivity implements DialogInterface.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

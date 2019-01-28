@@ -25,7 +25,7 @@
         <activity android:name=".CalendarActivity" />
         <activity android:name=".TopScorers" />
         <activity android:name=".SharedActivity" />
-        <activity android:name=".AboutApplicationActivity"></activity>
+        <activity android:name=".AboutAppActivity"></activity>
     </application>
 
 </manifest>

@@ -10,9 +10,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener,DialogInterface.OnClickListener {
 
@@ -79,7 +77,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.aboutApp:
-                Intent i = new Intent(this, AboutApplicationActivity.class);
+                Intent i = new Intent(this, AboutAppActivity.class);
                 startActivity(i);
             default:
                 return super.onOptionsItemSelected(item);
