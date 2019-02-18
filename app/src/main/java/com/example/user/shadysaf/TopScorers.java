@@ -23,16 +23,16 @@ public class TopScorers extends AppCompatActivity implements DialogInterface.OnC
 
         TopScorers = findViewById(R.id.TopScorers);
         items = new ArrayList<>();
-        items.add(new Item(R.drawable.messi3,"649 games       564 goals"));
-        items.add(new Item(R.drawable.suarez4,"211 games       156 goals"));
-        items.add(new Item(R.drawable.rivaldo3,"236 games       133 goals"));
-        items.add(new Item(R.drawable.etoo3,"199 games       130 goals"));
-        items.add(new Item(R.drawable.kluivert2,"259 games       123 goals"));
-        items.add(new Item(R.drawable.stoichkov2,"247 games       114 goals"));
-        items.add(new Item(R.drawable.enrique2,"301 games       110 goals"));
-        items.add(new Item(R.drawable.neymar2,"186 games       105 goals"));
-        items.add(new Item(R.drawable.pedro2,"321 games         99 goals"));
-        items.add(new Item(R.drawable.ronaldinho2,"207 games         94 goals"));
+        items.add(new Item(R.drawable.messi3,"LEO MESSI        649 games       564 goals"));
+        items.add(new Item(R.drawable.suarez4,"LUIS SUAREZ      211 games       156 goals"));
+        items.add(new Item(R.drawable.rivaldo3,"RIVALDO             236 games       133 goals"));
+        items.add(new Item(R.drawable.etoo3,"ETO'O                  199 games       130 goals"));
+        items.add(new Item(R.drawable.kluivert2,"KLUIVERT             259 games       123 goals"));
+        items.add(new Item(R.drawable.stoichkov2,"STOICHKOV              247 games       114 goals"));
+        items.add(new Item(R.drawable.enrique2,"LUIS ENRIQUE            301 games       110 goals"));
+        items.add(new Item(R.drawable.neymar2,"NEYMAR JR             186 games       105 goals"));
+        items.add(new Item(R.drawable.pedro2,"PEDRO                321 games         99 goals"));
+        items.add(new Item(R.drawable.ronaldinho2,"RONALDINHO                 207 games         94 goals"));
 
         arrayAdapter = new CustomAdapter(this,R.layout.custom_row,items);
         TopScorers.setAdapter(arrayAdapter);
