@@ -58,7 +58,8 @@ public class Main2Activity extends AppCompatActivity implements DialogInterface.
         //
         AlertDialog dialog = builder.create();
         //
-        dialog.show();
+
+
     }
 
     @Override
@@ -78,6 +79,20 @@ public class Main2Activity extends AppCompatActivity implements DialogInterface.
         if(v==textView4){
             Intent intent1 = new Intent(getApplication(),CalendarActivity.class);
             startActivity(intent1);
+        }
+    }
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.my_menu2, menu);
+        return true;
+    }
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.Camera:
+                Intent i = new Intent(this,CameraGalleryActivity.class);
+                startActivity(i);
+            default:
+                return super.onOptionsItemSelected(item);
         }
     }
     
