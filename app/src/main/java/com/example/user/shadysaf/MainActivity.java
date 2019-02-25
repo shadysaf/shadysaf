@@ -26,6 +26,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tvBarcelona.setOnClickListener(this);
         btStart.setOnClickListener(this);
 
+        Intent intent = new Intent(this,MusicService.class);
+        startService(intent);
+
 
     }
 

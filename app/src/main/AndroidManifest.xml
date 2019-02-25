@@ -25,7 +25,12 @@
         <activity android:name=".CalendarActivity" />
         <activity android:name=".TopScorers" />
         <activity android:name=".SharedActivity" />
-        <activity android:name=".AboutAppActivity"></activity>
+        <activity android:name=".AboutAppActivity" />
+
+        <service
+            android:name=".MusicService"
+            android:enabled="true"
+            android:exported="true"></service>
     </application>
 
 </manifest>

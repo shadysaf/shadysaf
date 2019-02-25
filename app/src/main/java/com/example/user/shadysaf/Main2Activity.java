@@ -58,6 +58,7 @@ public class Main2Activity extends AppCompatActivity implements DialogInterface.
         //
         AlertDialog dialog = builder.create();
         //
+        dialog.show();
 
 
     }
