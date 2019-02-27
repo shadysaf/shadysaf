@@ -19,7 +19,7 @@ public class MusicService extends Service {
     }
     public void onCreate(){
         super.onCreate();
-        mp=MediaPlayer.create(getApplicationContext(),R.raw.bensound);
+        mp=MediaPlayer.create(getApplicationContext(),R.raw.fcb);
     }
     public int onStartCommand(Intent intent,int flags,int startId){
         mp.setLooping(false);

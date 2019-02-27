@@ -24,7 +24,6 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".CalendarActivity" />
         <activity android:name=".TopScorers" />
-        <activity android:name=".SharedActivity" />
         <activity android:name=".AboutAppActivity" />
 
         <service

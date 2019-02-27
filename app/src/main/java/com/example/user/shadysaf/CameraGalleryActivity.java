@@ -54,7 +54,7 @@ public class CameraGalleryActivity extends AppCompatActivity implements  DialogI
             startActivityForResult(i,CAMERA_REQUEST);
         }else {
             Intent i = new
-            Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+                    Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
             startActivityForResult(i,SELECT_IMAGE);
         }
     }
@@ -73,7 +73,7 @@ public class CameraGalleryActivity extends AppCompatActivity implements  DialogI
 
 
         }
-         else if(requestCode == SELECT_IMAGE && requestCode == Activity.RESULT_OK){
+        else if(requestCode == SELECT_IMAGE && requestCode == Activity.RESULT_OK){
             Uri targetUri = data.getData();
             try{
                 bitmap = BitmapFactory.decodeStream(getContentResolver().openInputStream(targetUri));
